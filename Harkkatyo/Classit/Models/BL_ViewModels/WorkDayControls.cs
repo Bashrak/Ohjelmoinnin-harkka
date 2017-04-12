@@ -35,5 +35,16 @@ namespace Classit.Models.BL_ViewModels {
 				throw;
 			}
 		}
+		public void InsertToMysql()
+		{
+			try {
+				string connStr = ""; // TODO fill this!!!
+				string sql = "SELECT EmployeeID, WorkStartTime, WorkEndTime FROM WorkDays";
+			}
+			catch {
+				throw;
+			}
+
+		}
 	}
 }
