@@ -1,0 +1,27 @@
+﻿<Window x:Class="Työajan_seuranta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Työajan_seuranta"
+        mc:Ignorable="d"
+        Title="Työnaikaseuranta" Height="350" Width="500">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem x:Name="SignOut" Header="_Kirjaudu Ulos" />
+                <MenuItem x:Name="EditEmployee" Header="_Muokkaa työntekijän tietoja" HorizontalAlignment="left"/>
+            </Menu>
+        </DockPanel>
+        <Button x:Name="OK_Button" Content="OK" HorizontalAlignment="Left" Height="30" Margin="125,260,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="Cancel_Button" Content="Peruuta" HorizontalAlignment="Left" Height="30" Margin="260,260,0,0" VerticalAlignment="Top" Width="110"/>
+        <DataGrid AutoGenerateColumns="False" Margin="22,70,21,70" ItemsSource="{Binding}" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tehdyt Tunnit" Binding="{Binding Name}" />  <!--Vaihda NAME classin attributiksi!-->
+                <DataGridTextColumn Header="Ylityötunnit" Binding="{Binding Name}" />   <!--Vaihda NAME classin attributiksi!-->
+            </DataGrid.Columns>   
+        </DataGrid>
+        <ComboBox x:Name="Select_Employee" HorizontalAlignment="Left" Height="22" Margin="125,36,0,0" VerticalAlignment="Top" Width="251" SelectionChanged="Select_Employee_SelectionChanged"/>
+
+    </Grid>
+</Window>
