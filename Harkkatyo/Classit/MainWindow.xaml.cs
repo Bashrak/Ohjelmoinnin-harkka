@@ -25,6 +25,7 @@ namespace Classit {
 			try {
 				WorkDayControls test = new WorkDayControls();
 				test.LoadFromMysql();
+				test.InsertToMysql();
 				dgWorkDayItems.DataContext = test.WorkDayItems;
 			}
 			catch (Exception ex) {

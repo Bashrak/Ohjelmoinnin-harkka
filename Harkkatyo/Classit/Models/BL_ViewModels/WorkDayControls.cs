@@ -39,12 +39,16 @@ namespace Classit.Models.BL_ViewModels {
 		{
 			try {
 				string connStr = ""; // TODO fill this!!!
-				string sql = "SELECT EmployeeID, WorkStartTime, WorkEndTime FROM WorkDays";
+				string sql = "INSERT INTO WorkDays (EmployeeID, WorkStartTime, WorkEndTime) VALUES  (2, '2016-02-03 07:00:00', '2016-02-03 16:00:00')";
+				using (MySqlConnection conn = new MySqlConnection(connStr)) {
+					conn.Open();
+					MySqlCommand cmd = new MySqlCommand(sql, conn);
+					cmd.ExecuteNonQuery();
+				}
 			}
 			catch {
 				throw;
 			}
-
 		}
 	}
 }
