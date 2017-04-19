@@ -23,5 +23,9 @@ namespace Työajan_seuranta
         {
             InitializeComponent();
         }
+        public void EmployeeinfoAll()
+        {
+            // EmployeeInfo.DataContext = "list from somewhere"
+        }
     }
 }

@@ -5,28 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Työajan_seuranta"
         mc:Ignorable="d"
-        Title="Työnaikaseuranta" Height="333.333" Width="415.687">
+        Title="Työnaikaseuranta" Height="227.318" Width="301.289" ResizeMode="CanMinimize">
     <Grid>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
-                <MenuItem x:Name="SignOut" Header="_Kirjaudu Ulos" />
-                <MenuItem x:Name="EditEmployee" Header="_Muokkaa työntekijän tietoja" HorizontalAlignment="left"/>
-
-
+                <MenuItem x:Name="SignOut" Header="_Kirjaudu Sisään" />
+                <MenuItem x:Name="EditEmployee" Header="_Muokkaa työntekijän tietoja" HorizontalAlignment="left" Click="EditEmployee_Click"/>
             </Menu>
         </DockPanel>
-        <Button x:Name="EditWorkHours" Content="Muokkaa omia tuntimerkintöjä" HorizontalAlignment="Left" Height="30" Margin="28,260,0,0" VerticalAlignment="Top" Width="187"/>
-        <Button x:Name="SignOff" Content="Kirjaudu Ulos" HorizontalAlignment="Left" Height="30" Margin="266,260,0,0" VerticalAlignment="Top" Width="110"/>
-        <DataGrid AutoGenerateColumns="False" Margin="28,74,32,66" ItemsSource="{Binding}" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Tehdyt Tunnit" Binding="{Binding Name}" />
-                <!--Vaihda NAME classin attributiksi!-->
-                <DataGridTextColumn Header="Ylityötunnit" Binding="{Binding Name}" />
-                <!--Vaihda NAME classin attributiksi!-->
-            </DataGrid.Columns>
-        </DataGrid>
-        <ComboBox x:Name="Select_Employee" HorizontalAlignment="Left" Height="22" Margin="28,36,0,0" VerticalAlignment="Top" Width="348" SelectionChanged="Select_Employee_SelectionChanged"/>
-
+        <StackPanel Margin="0,22,0,0">
+        <Button x:Name="EditWorkHours" Content="Hallitse omia tuntimerkintöjä" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="187" Click="EditWorkHours_Click"/>
+            <Button Content="Kirjaa työn aloitus" HorizontalAlignment="Center" Margin="0,10,0,5" VerticalAlignment="Top" Width="187" Height="30"/>
+            <Button Content="Kirjaa töistä poistuminen" HorizontalAlignment="center" Margin="5" VerticalAlignment="Top" Width="187" Height="30"/>
+            <Button x:Name="SignOff" Content="Kirjaudu Ulos" HorizontalAlignment="center" Height="30" Margin="5"  Width="187"/>
+        </StackPanel>
 
     </Grid>
 </Window>

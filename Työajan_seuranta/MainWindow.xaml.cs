@@ -29,5 +29,16 @@ namespace Työajan_seuranta
         {
 
         }
+
+        private void EditEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            EditEmployeeWindow editwindow = new EditEmployeeWindow();
+            editwindow.Show();
+        }
+
+        private void EditWorkHours_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

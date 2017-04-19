@@ -5,17 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Työajan_seuranta"
         mc:Ignorable="d"
-        Title="Muokkaa työntekijän tietoja" Height="300" Width="500">
+        Title="Muokkaa työntekijän tietoja" Height="230.769" Width="616.864">
     <Grid>
         <StackPanel>
-            <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="125,30,0,20" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.182,0.506"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.182,0.506">
+                <Label x:Name="addUser" Content="Lisää käytttäjä..." Width="200" HorizontalAlignment="Center"/>
+            </ComboBox>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button x:Name="ConfirmEdit" HorizontalAlignment="Center" Margin="5" Content="Tallenna muutokset" Width="124"/>
                 <Button x:Name="DeleteEmployee" HorizontalAlignment="Center" Margin="5" Content="Poista" Width="125"/>
                 <Button x:Name="Cancel" HorizontalAlignment="Center" Margin="5" Content="Peruuta" Width="125"/>
             </StackPanel>
-            <DataGrid x:Name="EmployeeInfo" ItemsSource="{Binding}" Height="157" Margin="10,0" />
-
+            <StackPanel Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Text="Etunimi" Width="80"/>
+                    <TextBlock HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Text="Sukunimi" Width="80"/>
+                    <TextBlock HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Text="Salasana" Width="80"/>
+                    <TextBlock HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Text="Admin" Width="80"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBox x:Name="txt_FirstName" HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Width="80"/>
+                    <TextBox x:Name="txt_LastName" HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Width="80"/>
+                    <TextBox x:Name="txt_Passwd" HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Width="80"/>
+                    <TextBox x:Name="txt_IsAdministrator" HorizontalAlignment="Left" Height=" 17" Margin="30,10,0,0" Width="80"/>
+                </StackPanel>
+                <DataGrid Margin="20,0,0,0" ItemsSource="{Binding}" AlternatingRowBackground="Gainsboro" AlternationCount="2">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Päivämäärä"/>
+                        <DataGridTextColumn Header="Töiden alku"/>
+                        <DataGridTextColumn Header="Töiden lopetus"/>
+                        <DataGridTextColumn Header="Paikalla"/>
+                        </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lassi\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\obj\Debug\
+C:\Users\K8321\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\obj\Debug\
 Työajan_seuranta
 none
 false
 DEBUG;TRACE
-C:\Users\lassi\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\App.xaml
-3-759617406
+C:\Users\K8321\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\App.xaml
+4-2115041880
 
-7-623761189
-14-1779603631
-EditEmployeeWindow.xaml;MainWindow.xaml;SignIn.xaml;
+814057268
+14-32426616
+EditEmployeeWindow.xaml;MainWindow.xaml;SignIn.xaml;SingToWork.xaml;
 
-True
+False
 
