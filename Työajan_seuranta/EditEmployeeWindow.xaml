@@ -14,7 +14,7 @@
                 <Button x:Name="DeleteEmployee" HorizontalAlignment="Center" Margin="5" Content="Poista" Width="125"/>
                 <Button x:Name="Cancel" HorizontalAlignment="Center" Margin="5" Content="Peruuta" Width="125"/>
             </StackPanel>
-            <DataGrid x:Name="EmployeeInfo" ItemsSource="{Binding}" />
+            <DataGrid x:Name="EmployeeInfo" ItemsSource="{Binding}" Height="157" Margin="10,0" />
 
         </StackPanel>
     </Grid>

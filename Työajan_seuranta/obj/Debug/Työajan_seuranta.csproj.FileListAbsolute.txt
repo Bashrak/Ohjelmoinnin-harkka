@@ -22,3 +22,6 @@ S:\Kayttoliittyma_harkka_tyo\Työajan_seuranta\Työajan_seuranta\obj\Debug\Työa
 S:\Kayttoliittyma_harkka_tyo\Ohjelmoinnin-harkka-master\Työajan_seuranta\bin\Debug\Työajan_seuranta.exe.config
 S:\Kayttoliittyma_harkka_tyo\Ohjelmoinnin-harkka-master\Työajan_seuranta\obj\Debug\Työajan_seuranta.exe
 S:\Kayttoliittyma_harkka_tyo\Ohjelmoinnin-harkka-master\Työajan_seuranta\obj\Debug\Työajan_seuranta.pdb
+C:\Users\lassi\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\bin\Debug\Työajan_seuranta.exe.config
+C:\Users\lassi\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\obj\Debug\Työajan_seuranta.exe
+C:\Users\lassi\Source\Repos\Ohjelmoinnin-harkka\Työajan_seuranta\obj\Debug\Työajan_seuranta.pdb

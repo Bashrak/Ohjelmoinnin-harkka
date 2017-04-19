@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Työajan_seuranta"
         mc:Ignorable="d"
-        Title="SignIn" Height="300" Width="300">
+        Title="Kirjaudu Sisään" Height="300" Width="300">
     <Grid>
         <StackPanel>
             <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="45,55,0,20" VerticalAlignment="Top" Width="200"/>
