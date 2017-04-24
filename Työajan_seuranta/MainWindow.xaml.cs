@@ -40,5 +40,11 @@ namespace Työajan_seuranta
         {
 
         }
+
+        private void SignToWork_Click(object sender, RoutedEventArgs e)
+        {
+            SignToWork signtowork = new SignToWork();
+            signtowork.Show();
+        }
     }
 }
